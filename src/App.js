@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container';
+import { UnsplashLayout } from './components/UnsplashLayout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container className='mt-5 container-full'>
+        <UnsplashLayout />
+      </Container>
+      <footer className='pb-3 d-flex justify-content-center'>
+        Created by <a href='https://github.com/andres326'>@andres326</a> -
+        devchallenges.io
+      </footer>
+    </>
   );
 }
 
